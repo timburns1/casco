@@ -1,8 +1,18 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+import './About.css';
 
 export const About = () => (
     <div>
-        <h2>About Page</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, at! Porro sequi distinctio eveniet beatae eaque eum! Magni eos facere tenetur aliquid nemo. Obcaecati quae vel enim veniam ut aperiam.</p>
+        <Image src="assets/logo2.jpg" className="headerImage" />
+        <Container>
+            <Col xs={12} sm={8} smOffset={2}>
+                <Image src="assets/soilBarrel3.png" className="aboutSoil" rounded></Image>
+            </Col>
+        </Container>
     </div>
 )

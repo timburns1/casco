@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container, ButtonToolbar } from 'react-bootstrap';
 import styled from 'styled-components';
-import Logo2 from '../assets/logo2.jpg';
+// import Logo2 from '../../public/assets/logo2.jpg';
 import { Link, Router } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 
@@ -19,7 +19,7 @@ const Styles = styled.div`
 
     }
     .jumbo {
-        // background: url(${Logo2}) no-repeat fixed bottom;
+        
         background-size:cover;
         color: #ccc;
         height: 200px;

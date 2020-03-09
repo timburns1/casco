@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
+import './Home.css';
 
 export const Home = () => (
     <Container>
@@ -13,15 +14,15 @@ export const Home = () => (
         </div>
         <Row className="show-grid text center">
             <Col xs={12} sm={4} classname="room-wrapper">
-                <Image src="./assets/growRoom.png" roundedCircle className="growRoom" />
+                <Image src="assets/growRoom.png" rounded className="spaced-pics" id="left" />
 
             </Col>
             <Col xs={12} sm={4} classname="room-wrapper">
-                <Image src="./assets/logo1.jpg" roundedCircle className="logo1" />
+                <Image src="assets/logo1.jpg" roundedCircle className="spaced-pics" />
 
             </Col>
             <Col xs={12} sm={4} classname="room-wrapper">
-                <Image src="./assets/soil.png" roundedCircle className="soil" />
+                <Image src="assets/soil.png" rounded className="spaced-pics" id="right" />
 
             </Col>
         </Row>
