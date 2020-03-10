@@ -1,0 +1,16 @@
+.headerImage {
+    width: 100%;
+}
+
+.flowers {
+    width: 300px;
+    margin-top: 10px;
+    border: 3px black solid;
+    box-sizing: border-box;
+    grid-gap: 0.7rem;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}

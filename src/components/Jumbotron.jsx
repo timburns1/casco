@@ -36,9 +36,11 @@ function Jumbotron() {
                     <h1>Welcome to Casco Botanical</h1>
                     <p>If you are a client, please click Log In below</p>
                 </Container>
+
                 <ButtonToolbar>
                     <Button type="submit" href="/src/About.jsx">Log In</Button>
                 </ButtonToolbar>
+
             </Jumbo>
         </Styles>
 
