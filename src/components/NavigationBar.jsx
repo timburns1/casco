@@ -17,16 +17,25 @@ const Styles = styled.div`
 
 `;
 
-export const NavigationBar = () => (
+// TODO: add an onClick function to the logout link
+// onClick function should log the user out and set this.state.authenticated
+// to false in the App.js file
+export const NavigationBar = (props) => (
     <Styles>
+        {console.log('nav props', props)}
         <Navbar expand="lg">
-            <Navbar.Brand href="/">Casco Botanical</Navbar.Brand>
+            <Navbar.Brand href="/home">Casco Botanical</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse>
             <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="/Home">Home </Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/About">About </Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/Products">Products </Nav.Link></Nav.Item>
+                {/* <Nav.Item><Nav.Link href="/home">Home </Nav.Link></Nav.Item> */}
+                <Nav.Item><Nav.Link href="/about">About Us</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/products">Products</Nav.Link></Nav.Item>
+                {!props.auth ? (
+                    <Nav.Item><Nav.Link href="/login">Login</Nav.Link></Nav.Item>
+                ) : (
+                        <Nav.Item><Nav.Link href="/home">Logout</Nav.Link></Nav.Item>
+                    )}
             </Nav>
         </Navbar>
     </Styles>

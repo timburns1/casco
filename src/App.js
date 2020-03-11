@@ -8,63 +8,32 @@ import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import Jumbotron from './components/Jumbotron';
-import UserStore from './stores/userStore';
-import LoginFrom from './logIn';
-import inputField from './inputField';
-import SubmitButton from './components/SubmitButton';
+import LoginPage from './loginPage';
 
 class App extends Component {
-  async componentDidMount() {
-    try {
 
-      let res = await fetch('/isLoggedIn', {
-        method: 'post',
-        headers: {
-          'Accept': 'application/json ',
-          'Content-type': 'application/json'
-        }
-      });
-
-      let result = await res.json();
-
-      if (result && result.success) {
-        UserStore.loading = false;
-        UserStore.isLoggedIn = true;
-        UserStore.username = result.username;
-      }
-
-      else {
-        UserStore.loading = false;
-        UserStore.isLoggedIn = false;
-
-      }
-
-    }
-
-    catch (e) {
-
-      UserStore.loading = false;
-      UserStore.isLoggedIn = false;
-
-
-    }
+  state = {
+    authenticated: false,
   }
 
 
   render() {
-    return (<React.Fragment >
-      <NavigationBar />
-      <Jumbotron />
-      <Layout>
-        <Router>
+
+
+    return (<React.Fragment>
+      <Router>
+        <NavigationBar auth={this.state.authenticated} />
+        {/* <Jumbotron /> */}
+        <Layout>
           <Switch>
-            <Route exact path="/Home" component={Home} />
-            <Route exact path="/About" component={About} />
-            <Route exact path="/Products" component={Products} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/products" component={Products} />
+            <Route excact path="/login" component={LoginPage} />
             <Route component={NoMatch} />
           </Switch>
-        </Router>
-      </Layout>
+        </Layout>
+      </Router>
 
     </React.Fragment>
     );

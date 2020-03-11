@@ -16,6 +16,7 @@ const Styles = styled.div`
         bottom: 0;
         right: 0;
         z-index: -1;
+        margin: 10px;
 
     }
     .jumbo {
@@ -37,9 +38,15 @@ function Jumbotron() {
                     <p>If you are a client, please click Log In below</p>
                 </Container>
 
-                <ButtonToolbar>
-                    <Button type="submit" href="/src/About.jsx">Log In</Button>
-                </ButtonToolbar>
+
+                {/* <ButtonToolbar>
+                    <Button type="submit" href="/src/loginPage.jsx">Log In</Button>
+                </ButtonToolbar> */}
+                <Link to="/login" className="login-link">
+                    Login
+                </Link>
+
+
 
             </Jumbo>
         </Styles>

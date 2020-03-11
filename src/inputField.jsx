@@ -3,7 +3,15 @@ import React from 'react';
 class inputField extends React.Component {
     render() {
         return (
-            <div className="loginForm">
+            <div className="inputField">
+
+                <input
+                    className='input'
+                    type={this.props.type}
+                    placeholder={this.props.placeholder}
+                    value={this.props.value}
+                    onChange={(e) => this.props.onChange(e.target.value)}
+                />
 
 
             </div>

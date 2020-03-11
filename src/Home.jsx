@@ -9,7 +9,7 @@ import './Home.css';
 export const Home = () => (
     <Container>
         <div>
-            <h2>Casco</h2>
+            <h2>Of The Seed, Of The Soul</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, at! Porro sequi distinctio eveniet beatae eaque eum! Magni eos facere tenetur aliquid nemo. Obcaecati quae vel enim veniam ut aperiam.</p>
         </div>
         <Row className="show-grid text center">
