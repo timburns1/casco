@@ -20,15 +20,18 @@ export const About = () => (
                     <Image src="assets/soilTest.png" className="aboutSoil" id="soilResults" rounded />
                 </Col>
             </Row>
-            <Col xs={12} sm={8} smOffset={2}>
-                <Image src="assets/soilMix.png" className="aboutSoil" rounded />
-            </Col>
-            <Col xs={12} sm={8} smOffset={2}>
-                <Image src="assets/soilBarrel2.png" className="aboutSoil" rounded />
-            </Col>
-            <Col xs={12} sm={8} smOffset={2}>
-                <Image src="assets/soilBarrel.png" className="aboutSoil" rounded />
-            </Col>
+            <Row>
+                <Col xs={12} sm={8} smOffset={2}>
+                    <Image src="assets/soilMix.png" className="aboutSoil" rounded />
+                </Col>
+                <Col xs={12} sm={8} smOffset={2}>
+                    <Image src="assets/soilBarrel2.png" className="aboutSoil" rounded />
+                </Col>
+
+                <Col xs={12} sm={8} smOffset={2}>
+                    <Image src="assets/soilBarrel.png" className="aboutSoil" rounded />
+                </Col>
+            </Row>
         </Container>
     </div>
 )
