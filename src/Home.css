@@ -10,3 +10,14 @@
 #right {
     margin-top: 30px;
 }
+
+.news {
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+.prods {
+    margin-top: 20px;
+    font-style: oblique;
+    margin-bottom: 10px;
+}
