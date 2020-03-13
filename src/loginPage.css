@@ -36,13 +36,15 @@
 
 .submitButton {
     padding-top: 16px;
+    background-color: aliceblue;
+    border: 1px solid black;
 }
 
 
-.btn {
+/* .btn {
     width: 100%;
     min-width: 280px;
-    color: #565656;
+    color: green;
     padding: 12px;
     font-size: 14px;
     font-weight: bold;
@@ -50,4 +52,5 @@
     border-radius: 4px;
     background: #fff;
     cursor: pointer;
-}
+    background-color: yellow;
+} */

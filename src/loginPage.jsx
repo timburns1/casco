@@ -100,7 +100,7 @@ class LoginPage extends React.Component {
                             Welcome {UserStore.username}
 
                             <SubmitButton
-                                text={'Log Out'}
+                                text={'log out'}
                                 disabled={false}
                                 onClick={() => this.doLogout()}
                             />

@@ -101,7 +101,7 @@ class LoginForm extends React.Component {
 
                 />
 
-                <SubmitButton
+                <SubmitButton className="btn"
                     text='Login'
                     disabled={this.state.buttonDisabled}
                     onClick={() => this.doLogin()}
